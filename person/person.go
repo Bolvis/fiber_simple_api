@@ -13,7 +13,7 @@ type Person struct {
 
 func GetAllPeople(c *fiber.Ctx) error {
 	array_of_people := CreateArrayOfPeople()
-	response, err := json.Marshal(array_of_people)
+	response, err := json.MarshalIndent(array_of_people, "\t", "\t")
 
 	if err != nil {
 		return c.Status(500).SendString("Internal server error :(")

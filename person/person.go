@@ -7,9 +7,8 @@ import (
 )
 
 type Person struct {
-	Age    int    `json:"age"`
-	Salary int    `json:"salary"`
-	Name   string `json:"name"`
+	Age  int    `json:"age"`
+	Name string `json:"name"`
 }
 
 func GetAllPeople(c *fiber.Ctx) error {

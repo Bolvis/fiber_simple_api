@@ -9,6 +9,6 @@ type Person struct {
 	Name string `json:"name"`
 }
 
-func GetAllPeople(c *fiber.Ctx) error {
-	return getAllPeopleService(c)
+func Get_all_people(c *fiber.Ctx) error {
+	return get_all_people_service(c)
 }

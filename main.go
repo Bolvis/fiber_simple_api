@@ -6,14 +6,14 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-func createMapping(app *fiber.App) {
-	app.Get("/api/v1/people", person.GetAllPeople)
+func create_mapping(app *fiber.App) {
+	app.Get("/api/v1/people", person.Get_all_people)
 }
 
 func main() {
 	app := fiber.New()
 
-	createMapping(app)
+	create_mapping(app)
 
 	app.Listen(":3000")
 }

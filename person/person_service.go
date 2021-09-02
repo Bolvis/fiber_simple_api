@@ -6,7 +6,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 )
 
-func createArrayOfPeople() []Person {
+func create_array_of_people() []Person {
 	kinga := Person{Age: 20, Name: "Kinga"}
 	filip := Person{Age: 20, Name: "Filip"}
 	david := Person{Age: 20, Name: "Dawid"}
@@ -15,8 +15,8 @@ func createArrayOfPeople() []Person {
 	return []Person{kinga, david, filip, karol}
 }
 
-func getAllPeopleService(c *fiber.Ctx) error {
-	array_of_people := createArrayOfPeople()
+func get_all_people_service(c *fiber.Ctx) error {
+	array_of_people := create_array_of_people()
 	response, err := json.MarshalIndent(array_of_people, "\t", "\t")
 
 	if err != nil {

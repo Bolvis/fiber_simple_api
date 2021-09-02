@@ -19,5 +19,7 @@ func GetAllPeople(c *fiber.Ctx) error {
 		return c.Status(500).SendString("Internal server error :(")
 	}
 
+	c.Context().SetContentType("Application/JSON")
+
 	return c.Send(response)
 }

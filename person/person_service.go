@@ -10,9 +10,10 @@ func create_array_of_people() []Person {
 	kinga := Person{Age: 20, Name: "Kinga"}
 	filip := Person{Age: 20, Name: "Filip"}
 	david := Person{Age: 20, Name: "Dawid"}
+	madzia := Person{Age: 20, Name: "Madzia"}
 	karol := Person{Age: 19, Name: "Karol"}
 
-	return []Person{kinga, david, filip, karol}
+	return []Person{kinga, david, filip, karol, madzia}
 }
 
 func get_all_people_service(c *fiber.Ctx) error {
